@@ -2,133 +2,152 @@ let mock = [{
     id: 1,
     name: "cattop",
     imgType: "jpg",
-    likes: "0",
+    likes: 0,
+    dislikes: 0,
     image: 'meme1.jpg'
   },
   {
       id: 2,
       name: "spock",
       imgType: "png",
-      likes: "0",
+      likes: 0,
+      dislikes: 0,
       image: 'meme2.png'
   },
   {
       id: 3,
       name: "i dont always",
       imgType: "png",
-      likes: "0",
+      likes: 0,
+      dislikes: 0,
       image: 'meme3.png'
   },
   {
     id: 4,
     name: "birthday cake",
     imgType: "png",
-    likes: "0",
+    likes: 0,
+    dislikes: 0,
     image: 'meme4.png'
   },
   {
     id: 5,
     name: "know enemy",
     imgType: "jpg",
-    likes: "0",
+    likes: 0,
+    dislikes: 0,
     image: 'meme5.jpg'
   },
   {
     id: 6,
     name: "drive through",
     imgType: "jpg",
-    likes: "0",
+    likes: 0,
+    dislikes: 0,
     image: 'meme6.jpg'
   },
   {
     id: 7,
     name: "dell laptop",
     imgType: "jpg",
-    likes: "0",
+    likes: 0,
+    dislikes: 0,
     image: 'meme7.jpg'
   },
   {
     id: 8,
     name: "bleated birthday",
     imgType: "jpg",
-    likes: "0",
+    likes: 0,
+    dislikes: 0,
     image: 'meme8.jpg'
   },
   {
     id: 9,
     name: "trump birthday",
     imgType: "jpg",
-    likes: "0",
+    likes: 0,
+    dislikes: 0,
     image: 'meme9.jpg'
   },
   {
     id: 10,
     name: "voldemort birthday",
     imgType: "png",
-    likes: "0",
+    likes: 0,
+    dislikes: 0,
     image: 'meme10.png'
   },
   {
     id: 11,
     name: "bad goat",
     imgType: "jpg",
-    likes: "0",
+    likes: 0,
+    dislikes: 0,
     image: 'meme11.jpg'
     },
     {
     id: 12,
     name: "free birthday wishes",
     imgType: "jpg",
-    likes: "0",
+    likes: 0,
+    dislikes: 0,
     image: 'meme12.jpg'
     },
     {
     id: 13,
     name: "elf birthday",
     imgType: "png",
-    likes: "0",
+    likes: 0,
+    dislikes: 0,
     image: 'meme13.png'
     },
     {
     id: 14,
     name: "kids meme",
     imgType: "png",
-    likes: "0",
+    likes: 0,
+    dislikes: 0,
     image: 'meme14.png'
     },
     {
     id: 15,
     name: "long Chile",
     imgType: "png",
-    likes: "0",
+    likes: 0,
+    dislikes: 0,
     image: 'meme15.png'
     },
     {
     id: 16,
     name: "management meme",
     imgType: "jpg",
-    likes: "0",
+    likes: 0,
+    dislikes: 0,
     image: 'meme16.jpg'
     },
     {
     id: 17,
     name: "dog medicine",
     imgType: "jpg",
-    likes: "0",
+    likes: 0,
+    dislikes: 0,
     image: 'meme17.jpg'
     },
     {
     id: 18,
     name: "dumb together",
     imgType: "jpg",
-    likes: "0",
+    likes: 0,
+    dislikes: 0,
     image: 'meme18.jpg'
     },
     {
     id: 19,
     name: "flert",
     imgType: "jpg",
-    likes: "0",
+    likes: 0,
+    dislikes: 0,
     image: 'meme19.jpg'
     },
     {
@@ -136,6 +155,7 @@ let mock = [{
     name: "Japanese anime",
     imgType: "jpg",
     likes: "0",
+    dislikes: "0",
     image: 'meme20.jpg'
     },
     {
@@ -143,6 +163,7 @@ let mock = [{
     name: "videogame reality",
     imgType: "jpg",
     likes: "0",
+    dislikes: "0",
     image: 'meme21.jpg'
     },
     {
@@ -150,6 +171,7 @@ let mock = [{
     name: "texas big",
     imgType: "jpg",
     likes: "0",
+    dislikes: "0",
     image: 'meme22.jpg'
     },
     {
@@ -157,6 +179,7 @@ let mock = [{
     name: "pirate grammer",
     imgType: "jpg",
     likes: "0",
+    dislikes: "0",
     image: 'meme23.jpg'
     },
     {
@@ -164,6 +187,7 @@ let mock = [{
     name: "not studying for finals",
     imgType: "jpg",
     likes: "0",
+    dislikes: "0",
     image: 'meme24.jpg'
     },
     {
@@ -171,6 +195,7 @@ let mock = [{
     name: "mermaid man",
     imgType: "jpg",
     likes: "0",
+    dislikes: "0",
     image: 'meme25.jpg'
     },
     {
@@ -178,6 +203,7 @@ let mock = [{
     name: "why brain?",
     imgType: "jpg",
     likes: "0",
+    dislikes: "0",
     image: 'meme26.jpg'
     },
     {
@@ -185,6 +211,7 @@ let mock = [{
     name: "classic blunders",
     imgType: "jpg",
     likes: "0",
+    dislikes: "0",
     image: 'meme27.jpg'
     },
     {
@@ -192,6 +219,7 @@ let mock = [{
     name: "cookie dough",
     imgType: "jpg",
     likes: "0",
+    dislikes: "0",
     image: 'meme28.jpg'
     },
     {
@@ -199,6 +227,7 @@ let mock = [{
     name: "poor santa",
     imgType: "jpg",
     likes: "0",
+    dislikes: "0",
     image: 'meme29.jpg'
     },
     {
@@ -206,6 +235,7 @@ let mock = [{
     name: "wd40 wonders",
     imgType: "jpg",
     likes: "0",
+    dislikes: "0",
     image: 'meme30.jpg'
     },
     {
@@ -213,6 +243,7 @@ let mock = [{
     name: "golem airport",
     imgType: "jpg",
     likes: "0",
+    dislikes: "0",
     image: 'meme31.jpg'
     },
     {
@@ -220,6 +251,7 @@ let mock = [{
     name: "say no to germs",
     imgType: "jpg",
     likes: "0",
+    dislikes: "0",
     image: 'meme32.jpg'
     },
     {
@@ -227,6 +259,7 @@ let mock = [{
     name: "antivirus pictures",
     imgType: "jpg",
     likes: "0",
+    dislikes: "0",
     image: 'meme33.jpg'
     },
     {
@@ -234,6 +267,7 @@ let mock = [{
     name: "flat earth society",
     imgType: "jpg",
     likes: "0",
+    dislikes: "0",
     image: 'meme34.jpg'
     },
     {
@@ -241,6 +275,7 @@ let mock = [{
     name: "why china santa?",
     imgType: "jpg",
     likes: "0",
+    dislikes: "0",
     image: 'meme35.jpg'
     },
     {
@@ -248,6 +283,7 @@ let mock = [{
     name: "12 yo me",
     imgType: "jpg",
     likes: "0",
+    dislikes: "0",
     image: 'meme36.jpg'
     },
     {
@@ -255,6 +291,7 @@ let mock = [{
     name: "no floating",
     imgType: "jpg",
     likes: "0",
+    dislikes: "0",
     image: 'meme37.jpg'
     },
     {
@@ -262,6 +299,7 @@ let mock = [{
     name: "solitaire",
     imgType: "jpg",
     likes: "0",
+    dislikes: "0",
     image: 'meme38.jpg'
     },
     {
@@ -269,6 +307,7 @@ let mock = [{
     name: "witch",
     imgType: "jpg",
     likes: "0",
+    dislikes: "0",
     image: 'meme39.jpg'
     },
     {
@@ -276,6 +315,7 @@ let mock = [{
     name: "seafood diet",
     imgType: "jpg",
     likes: "0",
+    dislikes: "0",
     image: 'meme40.jpg'
     },
     {
@@ -283,6 +323,7 @@ let mock = [{
     name: "didn't even study",
     imgType: "jpg",
     likes: "0",
+    dislikes: "0",
     image: 'meme41.jpg'
     },
     {
@@ -290,6 +331,7 @@ let mock = [{
     name: "random dog",
     imgType: "jpg",
     likes: "0",
+    dislikes: "0",
     image: 'meme42.jpg'
     },
     {
@@ -297,6 +339,7 @@ let mock = [{
     name: "dog worker",
     imgType: "jpg",
     likes: "0",
+    dislikes: "0",
     image: 'meme43.jpg'
     },
     {
@@ -304,6 +347,7 @@ let mock = [{
     name: "you're awesome",
     imgType: "jpg",
     likes: "0",
+    dislikes: "0",
     image: 'meme44.jpg'
     },
     {
@@ -311,6 +355,7 @@ let mock = [{
     name: "fat people",
     imgType: "jpg",
     likes: "0",
+    dislikes: "0",
     image: 'meme45.jpg'
     },
     {
@@ -318,6 +363,7 @@ let mock = [{
     name: "the two food types",
     imgType: "jpg",
     likes: "0",
+    dislikes: "0",
     image: 'meme46.jpg'
     },
     {
@@ -325,6 +371,7 @@ let mock = [{
     name: "y healthy food",
     imgType: "jpg",
     likes: "0",
+    dislikes: "0",
     image: 'meme47.jpg'
     },
     {
@@ -332,6 +379,7 @@ let mock = [{
     name: "cheese pun",
     imgType: "jpg",
     likes: "0",
+    dislikes: "0",
     image: 'meme48.jpg'
     },
     {
@@ -339,6 +387,7 @@ let mock = [{
     name: "food fire",
     imgType: "jpg",
     likes: "0",
+    dislikes: "0",
     image: 'meme49.jpg'
     },
     {
@@ -346,6 +395,7 @@ let mock = [{
     name: "Taco Bell catastrophe",
     imgType: "jpg",
     likes: "0",
+    dislikes: "0",
     image: 'meme50.jpg'
     }
 
