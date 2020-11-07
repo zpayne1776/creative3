@@ -80,26 +80,30 @@ $checked-color: darken($color-unchecked, 25%) !default;
   margin-bottom: 40px;
   padding-bottom: 20px;
   width: 100%;
+    border-radius: 20px;
 }
 
 .memes {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .meme {
   margin: 10px;
   margin-top: 50px;
-  width: 500px;
-
-  padding: 15px;
+  width: 80%;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px 15px rgba(50,50,50, .7);
 }
 
 .meme img {
-  border: 2px solid #333;
   width: 100%;
   object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .meme .image {
@@ -116,6 +120,8 @@ $checked-color: darken($color-unchecked, 25%) !default;
   color: #000;
   padding: 10px 30px;
   height: 80px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .info h1 {
@@ -123,8 +129,9 @@ $checked-color: darken($color-unchecked, 25%) !default;
 }
 
 .info h2 {
-  font-size: 14px;
+  font-size: 18px;
   padding: 10px;
+  text-transform: uppercase;
 }
 
 .info p {
@@ -152,9 +159,12 @@ button {
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
   .wrapper {
-    width: 700px;
+    width: 900px;
   }
 
+  .meme {
+    width: 500px;
+  }
 
 }
 </style>

@@ -26,20 +26,22 @@
 }
 
 
-body {
-
-}
-
 #menu {
   display: flex;
   background-color: #00e3fc;
   margin-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 30px;
   flex-direction: column;
 }
 
 #menu a {
   color: white;
   text-decoration: none;
+}
+
+#menu h1 {
+  font-size: 40px;
 }
 
 #brand {
@@ -70,7 +72,13 @@ body {
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
 
+  #menu h1 {
+    font-size: 80px;
+  }
 
-
+  #menu {
+    padding-top: 25px;
+    padding-bottom: 20px;
+  }
 }
 </style>
