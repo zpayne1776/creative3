@@ -16,7 +16,7 @@
               :dislikeChecked="dislikeChecked"
               @like="like(meme)"
               @dislike="dislike(meme)"/>
-              <ToggleFavorite/>
+              <ToggleFavorite @click="favorite(meme)"/>
             </div>
           </div>
         </div>
@@ -52,6 +52,9 @@ export default {
     },
     dislike(meme) {
       meme.dislikes += 1;
+    },
+    favorite(meme) {
+      this.$root.$data.favorites.push(meme);
     }
   }
 }
