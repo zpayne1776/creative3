@@ -40,6 +40,7 @@ export default {
     justify-content: center;
     bottom: 0px;
     margin-bottom: 0px;
+    margin-top: 20px;
     overflow: hidden;
     margin-top: auto;
   }

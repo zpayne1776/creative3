@@ -9,7 +9,7 @@
     <div id="side">
       <router-link to="/favorites">
         <div class="menu-item">
-          <div id="title">⫸ Your Liked Memes ⫷</div>
+          <div id="title">⫸ Your Favorites ⫷</div>
         </div>
       </router-link>
     </div>
@@ -47,19 +47,11 @@ body {
   justify-content: center;
 }
 
-#brand img {
-  height: 200px;
-}
-
 #side {
   display: flex;
   justify-content: center;
   padding: 10px;
   margin-bottom: 20px;
-}
-
-#side img {
-  width: 50px;
 }
 
 .menu-item {

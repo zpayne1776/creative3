@@ -77,6 +77,8 @@ $checked-color: darken($color-unchecked, 25%) !default;
   align-items: center;
   justify-content: center;
   background-color: #9cf5ff;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
   width: 100%;
 }
 
@@ -89,22 +91,20 @@ $checked-color: darken($color-unchecked, 25%) !default;
 .meme {
   margin: 10px;
   margin-top: 50px;
-  width: 250px;
-  background: red;
+  width: 500px;
+
   padding: 15px;
 }
 
 .meme img {
   border: 2px solid #333;
-  height: 250px;
-  width: 200px;
+  width: 100%;
   object-fit: cover;
 }
 
 .meme .image {
   display: flex;
   justify-content: center;
-  margin-bottom: 5px;
 }
 
 .info {
@@ -112,6 +112,7 @@ $checked-color: darken($color-unchecked, 25%) !default;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: white;
   color: #000;
   padding: 10px 30px;
   height: 80px;
