@@ -27,7 +27,7 @@
 
 
 body {
-  margin: 20px 20px;
+
 }
 
 #menu {

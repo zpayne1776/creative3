@@ -1,35 +1,42 @@
 <template>
 <div class="page">
-<div class="wrapper">
-  <div class="memes">
-    <div class="meme" v-for="meme in memes" :key="meme.id">
-      <div class="image">
-        <img :src="'/memes/'+meme.image">
-      </div>
-      <div class="info">
-        <h2>{{meme.name}}</h2>
-        <vue-like-dislike-buttons
-        :likes="meme.likes"
-        :dislikes="meme.dislikes"
-        :likeChecked="likeChecked"
-        :dislikeChecked="dislikeChecked"
-        @like="like(meme)"
-        @dislike="dislike(meme)"/>
+  <div class="wrapper">
+    <div class="memes">
+      <div class="meme" v-for="meme in memes" :key="meme.id">
+        <div class="image">
+          <img :src="'/memes/'+meme.image">
+        </div>
+        <div class="info">
+          <h2>{{meme.name}}</h2>
+            <div class="buttons">
+              <vue-like-dislike-buttons
+              :likes="meme.likes"
+              :dislikes="meme.dislikes"
+              :likeChecked="likeChecked"
+              :dislikeChecked="dislikeChecked"
+              @like="like(meme)"
+              @dislike="dislike(meme)"/>
+              <ToggleFavorite/>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
-</div>
 </template>
 
 <script>
 import VueLikeDislikeButtons from "vue-like-dislike-buttons";
+import ToggleFavorite from "./ToggleFavorite";
+import "vue-like-dislike-buttons/src/assets/scss/main.scss"
+
 export default {
   name: 'MemeList',
   props: {
     memes: Array
   },
   components: {
+    ToggleFavorite,
     VueLikeDislikeButtons
   },
   data() {
@@ -41,6 +48,7 @@ export default {
   methods: {
     like(meme) {
       meme.likes += 1;
+
     },
     dislike(meme) {
       meme.dislikes += 1;
@@ -49,7 +57,12 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+$color-unchecked: #a7a7a7 !default;
+$color-hover: darken($color-unchecked, 15%) !default;
+$checked-color: darken($color-unchecked, 25%) !default;
+
+
 .page {
   display: flex;
   align-items: center;
@@ -74,6 +87,8 @@ export default {
   margin: 10px;
   margin-top: 50px;
   width: 250px;
+  background: red;
+  padding: 15px;
 }
 
 .meme img {
@@ -94,7 +109,6 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #F2921D;
   color: #000;
   padding: 10px 30px;
   height: 80px;
