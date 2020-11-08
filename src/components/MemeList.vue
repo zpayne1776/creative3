@@ -16,7 +16,7 @@
               :dislikeChecked="dislikeChecked"
               @like="like(meme)"
               @dislike="dislike(meme)"/>
-              <ToggleFavorite @click="favorite(meme)"/>
+              <ToggleFavorite v-on:click="favorite(meme)"/>
             </div>
           </div>
         </div>
