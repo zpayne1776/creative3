@@ -56,34 +56,38 @@ $checked-color: darken($color-unchecked, 25%) !default;
   align-items: center;
   justify-content: center;
   background-color: #9cf5ff;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
   width: 100%;
+    border-radius: 20px;
 }
 
 .memes {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .meme {
   margin: 10px;
   margin-top: 50px;
-  width: 250px;
-  background: red;
-  padding: 15px;
+  width: 80%;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px 15px rgba(50,50,50, .7);
 }
 
 .meme img {
-  border: 2px solid #333;
-  height: 250px;
-  width: 200px;
+  width: 100%;
   object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .meme .image {
   display: flex;
   justify-content: center;
-  margin-bottom: 5px;
 }
 
 .info {
@@ -91,9 +95,12 @@ $checked-color: darken($color-unchecked, 25%) !default;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: white;
   color: #000;
   padding: 10px 30px;
   height: 80px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .info h1 {
@@ -101,8 +108,9 @@ $checked-color: darken($color-unchecked, 25%) !default;
 }
 
 .info h2 {
-  font-size: 14px;
+  font-size: 18px;
   padding: 10px;
+  text-transform: uppercase;
 }
 
 .info p {
@@ -116,7 +124,9 @@ $checked-color: darken($color-unchecked, 25%) !default;
 }
 
 button {
-  height: 50px;
+  height: 30px;
+  padding: 0px 10px 0px 10px;
+  align-items: center;
   background: #000;
   color: white;
   border: none;
@@ -130,9 +140,12 @@ button {
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
   .wrapper {
-    width: 700px;
+    width: 900px;
   }
 
+  .meme {
+    width: 500px;
+  }
 
 }
 </style>
