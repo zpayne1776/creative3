@@ -7,7 +7,12 @@
           <img :src="'/memes/'+meme.image">
         </div>
         <div class="info">
-          <h2>{{meme.name}}</h2>
+          <router-link :to="{ path: '/comments', query: {
+            meme: {
+                "id": meme.id, "name": meme.name, "likes": meme.likes, "dislikes": meme.dislikes, "image": meme.image
+              }}}">
+            <h2>{{meme.name}}</h2>
+          </router-link>
             <div class="buttons">
               <vue-like-dislike-buttons
               :likes="meme.likes"
@@ -16,7 +21,7 @@
               :dislikeChecked="dislikeChecked"
               @like="like(meme)"
               @dislike="dislike(meme)"/>
-              <ToggleFavorite v-on:click="favorite(meme)"/>
+              <ToggleFavorite v-on:click.native="favorite(meme)"/>
             </div>
           </div>
         </div>

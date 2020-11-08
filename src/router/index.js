@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Favorite from "../views/Favorite.vue";
+import Comments from "../views/Comments.vue";
 
 Vue.use(VueRouter);
 
@@ -13,18 +14,14 @@ const routes = [
   },
   {
     path: "/favorites",
-    name: "Favorite",
+    name: "Favorites",
     component: Favorite
   },
   {
-    path: "/about",
-    name: "About",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue")
-  },
+    path: "/comments",
+    name: "Comments",
+    component: Comments
+  }
 
 ];
 
