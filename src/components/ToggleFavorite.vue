@@ -44,6 +44,9 @@ export default {
     onIconAnimationEnds() {
       this.animating = false;
     },
+    favorite(meme) {
+      this.$root.$data.favorites.push(meme);
+    }
   },
 };
 </script>
