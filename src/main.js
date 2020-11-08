@@ -9,7 +9,8 @@ import mock from './mock.js'
 
 let data = {
   memes: mock,
-  favorites: []
+  favorites: [],
+  currentMeme: null
 }
 
 new Vue({

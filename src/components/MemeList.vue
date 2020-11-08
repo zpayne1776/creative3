@@ -7,11 +7,8 @@
           <img :src="'/memes/'+meme.image">
         </div>
         <div class="info">
-          <router-link :to="{ path: '/comments', query: {
-            meme: {
-                "id": meme.id, "name": meme.name, "likes": meme.likes, "dislikes": meme.dislikes, "image": meme.image
-              }}}">
-            <h2>{{meme.name}}</h2>
+          <router-link to="/comments">
+            <div id="meme-name">{{meme.name}}</div>
           </router-link>
             <div class="buttons">
               <vue-like-dislike-buttons
@@ -86,6 +83,10 @@ $checked-color: darken($color-unchecked, 25%) !default;
   padding-bottom: 20px;
   width: 100%;
     border-radius: 20px;
+}
+
+#meme-name {
+  font-size: 20px;
 }
 
 .memes {

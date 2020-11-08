@@ -28,7 +28,7 @@
         <button type="submit">Comment</button>
       </form>
       <h3>Comments</h3>
-      <div v-for="comment in comments[number]" :key="comment">
+      <div v-for="comment in comments" :key="comment.author">
         <hr>
         <p>{{comment.text}}</p>
         <p><i>-- {{comment.author}}</i></p>
@@ -44,7 +44,7 @@
   export default {
     name: 'Comments',
     props: {
-      meme: this.$route.query
+      meme: ;
     },
     data() {
       return {
@@ -57,9 +57,7 @@
     },
     methods: {
       addComment() {
-        if (!(this.number in this.comments))
-          Vue.set(app.comments, this.number, new Array);
-        this.comments[this.number].push({
+        this.comments.push({
           author: this.addedName,
           text: this.addedComment,
         });
