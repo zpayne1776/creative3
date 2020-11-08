@@ -1,0 +1,138 @@
+
+
+<template>
+<div class="page">
+  <div class="wrapper">
+    <div class="memes">
+      <div class="meme" v-for="meme in favoriteList" :key="meme.id">
+        <div class="image">
+          <img :src="'/memes/'+meme.image">
+        </div>
+        <div class="info">
+          <h2>{{meme.name}}</h2>
+            <div class="buttons">
+              <button class="remove" @click="favRemove(meme)">Remove</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import "vue-like-dislike-buttons/src/assets/scss/main.scss"
+
+export default {
+  name: 'FavoriteList',
+  
+  computed: {
+    favoriteList(){
+      return this.$root.$data.favorites
+    }
+  },
+  methods:{
+    favRemove(meme){
+        this.$root.$data.favorites.splice(this.$root.$data.favorites.indexOf(meme),1);
+      }
+    }
+}
+</script>
+
+<style lang="scss" scoped>
+$color-unchecked: #a7a7a7 !default;
+$color-hover: darken($color-unchecked, 15%) !default;
+$checked-color: darken($color-unchecked, 25%) !default;
+
+
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #9cf5ff;
+  width: 100%;
+}
+
+.memes {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.meme {
+  margin: 10px;
+  margin-top: 50px;
+  width: 250px;
+  background: red;
+  padding: 15px;
+}
+
+.meme img {
+  border: 2px solid #333;
+  height: 250px;
+  width: 200px;
+  object-fit: cover;
+}
+
+.meme .image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  padding: 10px 30px;
+  height: 80px;
+}
+
+.info h1 {
+  font-size: 16px;
+}
+
+.info h2 {
+  font-size: 14px;
+  padding: 10px;
+}
+
+.info p {
+  margin: 0px;
+  font-size: 10px;
+}
+
+
+.price {
+  display: flex;
+}
+
+button {
+  height: 50px;
+  background: #000;
+  color: white;
+  border: none;
+}
+
+.auto {
+  margin-left: auto;
+}
+
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .wrapper {
+    width: 700px;
+  }
+
+
+}
+</style>
