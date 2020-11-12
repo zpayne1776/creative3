@@ -19,6 +19,8 @@
         </div>
       </div>
     </div>
+    <br/>
+    <br/>
     <div class="commentSection">
       <h3>Add a Comment</h3>
       <form id="input" v-on:submit.prevent="addComment">
@@ -28,11 +30,16 @@
         <br />
         <button type="submit">Comment</button>
       </form>
+      <br/>
+      <br/>
       <h3>Comments</h3>
-      <div v-for="comment in comments" :key="comment.author">
+      <div class="comment" v-for="comment in comments" :key="comment.author">
         <hr>
+        <br/>
         <p>{{comment.text}}</p>
+        <br/>
         <p><i>-- {{comment.author}}</i></p>
+        <br/>
       </div>
     </div>
   </div>
@@ -48,7 +55,7 @@
       return {
         addedName: '',
         addedComment: '',
-        comments: {},
+        comments: [],
         likeChecked: false,
         dislikeChecked: false,
         meme: {}
@@ -100,6 +107,10 @@ $checked-color: darken($color-unchecked, 25%) !default;
   width: 100%;
   border-radius: 20px;
   flex-direction: column;
+}
+
+p {
+  color: black;
 }
 
 .memes {
@@ -163,13 +174,26 @@ $checked-color: darken($color-unchecked, 25%) !default;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 300px;
+  border-radius: 20px;
 }
 
 #input {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
 
+.comment {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 250px;
+}
+
+hr {
+  width: 100%;
 }
 
 button {
