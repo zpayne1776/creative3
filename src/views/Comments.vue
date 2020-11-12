@@ -21,8 +21,9 @@
     </div>
     <div class="commentSection">
       <h3>Add a Comment</h3>
-      <form v-on:submit.prevent="addComment">
+      <form id="input" v-on:submit.prevent="addComment">
         <input v-model="addedName" placeholder="Name">
+        <br/>
         <textarea v-model="addedComment"></textarea>
         <br />
         <button type="submit">Comment</button>
@@ -97,7 +98,8 @@ $checked-color: darken($color-unchecked, 25%) !default;
   margin-bottom: 40px;
   padding-bottom: 20px;
   width: 100%;
-    border-radius: 20px;
+  border-radius: 20px;
+  flex-direction: column;
 }
 
 .memes {
@@ -156,9 +158,18 @@ $checked-color: darken($color-unchecked, 25%) !default;
   font-size: 10px;
 }
 
-
-.price {
+.commentSection {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
 }
 
 button {
