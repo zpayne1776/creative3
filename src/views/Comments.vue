@@ -15,7 +15,7 @@
             :dislikeChecked="dislikeChecked"
             @like="like(meme)"
             @dislike="dislike(meme)"/>
-          <ToggleFavorite @click="favorite(meme)"/>
+          <ToggleFavorite v-on:click.native="favorite(meme)"/>
         </div>
       </div>
     </div>
@@ -47,10 +47,16 @@
 </template>
 
 <script>
-  import "vue-like-dislike-buttons/src/assets/scss/main.scss"
+  import "vue-like-dislike-buttons/src/assets/scss/main.scss";
+  import VueLikeDislikeButtons from "vue-like-dislike-buttons";
+  import ToggleFavorite from "../components/ToggleFavorite";
 
   export default {
     name: 'Comments',
+    components: {
+      ToggleFavorite,
+      VueLikeDislikeButtons
+    },
     data() {
       return {
         addedName: '',
