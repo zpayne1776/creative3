@@ -7,7 +7,7 @@
           <img :src="'/memes/'+meme.image">
         </div>
         <div class="info">
-          <router-link to="/comments">
+          <router-link :to="'/comments/' + meme.id">
             <div id="meme-name">{{meme.name}}</div>
           </router-link>
             <div class="buttons">

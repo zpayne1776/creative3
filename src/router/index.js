@@ -18,7 +18,7 @@ const routes = [
     component: Favorite
   },
   {
-    path: "/comments",
+    path: "/comments/:id",
     name: "Comments",
     component: Comments
   }

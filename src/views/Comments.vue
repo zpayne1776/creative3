@@ -43,17 +43,18 @@
 
   export default {
     name: 'Comments',
-    props: {
-      meme: ;
-    },
     data() {
       return {
         addedName: '',
         addedComment: '',
         comments: {},
         likeChecked: false,
-        dislikeChecked: false
+        dislikeChecked: false,
+        meme: {}
       };
+    },
+    created() {
+      this.meme = this.$root.$data.memes.find(meme => meme.id === parseInt(this.$route.params.id));
     },
     methods: {
       addComment() {
